@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 1600,
+  "height": 800,
+  "title": {"text": "Map", "frame": "group"},
+  "style": "cell",
+  "data": [
+    {
+      "name": "Country Ids",
+      "url": "./data/country_id_mapping.csv",
+      "format": {"type": "csv", "delimiter": ","}
+    },
+    {
+      "name": "World Map",
+      "url": "./js/ne_50m.json",
+      "format": {
+        "type": "topojson",
+        "feature": "ne_50m_admin_0_countries"
+      },
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "Country Ids",
+          "key": "country_id",
+          "fields": ["country_name"]
+        }
+      ]
+    },
+    {
+      "name": "Violent Events",
+      "url": "./data/GEDEvent_v22_1.csv",
+      "format": {"type": "csv", "delimiter": ","},
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "Country Ids",
+          "key": "country_name",
+          "fields": ["country_id"]
+        }
+      ]
+    },
+    {
+      "name": "World Map with Deaths",
+      "source": "World Map",
+      "transform": [
+        {
+          "type": "geojson",
+          "fields": ["longitude", "latitude"],
+          "signal": "layer_2_geojson_0"
+        },
+        {
+          "type": "geopoint",
+          "projection": "projection",
+          "fields": ["longitude", "latitude"],
+          "as": ["layer_2_x", "layer_2_y"]
+        },
+        {
+          "type": "lookup",
+          "from": "Violent Events",
+          "key": "country_name",
+          "fields": ["country_name"]
+        }
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "name": "projection",
+      "size": {"signal": "[width, height]"},
+      "fit": {
+        "signal": "[data('World Map'), data('World Map'), layer_2_geojson_0]"
+      },
+      "type": "equalEarth"
+    }
+  ],
+  "marks": [
+    {
+      "name": "Base Map",
+      "type": "shape",
+      "style": ["geoshape"],
+      "from": {"data": "World Map"},
+      "encode": {
+        "update": {
+          "fill": {"value": "lightgrey"},
+          "stroke": {"value": "white"},
+          "ariaRoleDescription": {"value": "geoshape"}
+        }
+      },
+      "transform": [{"type": "geoshape", "projection": "projection"}]
+    },
+    {
+      "name": "Coloured Map",
+      "type": "shape",
+      "style": ["geoshape"],
+      "from": {"data": "World Map"},
+      "encode": {
+        "update": {
+          "fill": {"scale": "color", "field": "country_id"},
+          "ariaRoleDescription": {"value": "geoshape"}
+        }
+      },
+      "transform": [{"type": "geoshape", "projection": "projection"}]
+    }
+  ]
+}
