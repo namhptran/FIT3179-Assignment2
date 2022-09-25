@@ -1,13 +1,14 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Map",
-  "width": 1600,
-  "height": 800,
+  "width": 2000,
+  "height": 1000,
   "projection": {
     "type": "equalEarth"
   },
   "layer": [
     {
+      "name": "World Map Base",
       "data": {
         "url": "./js/ne_50m.json",
         "format": {
@@ -22,6 +23,7 @@
       }
     },
     {
+      "name": "Chloropleth Map",
       "data": {
         "url": "./js/ne_50m.json",
         "format": {
@@ -34,21 +36,14 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-              "url": "./data/country_id_mapping.csv"
+              "url": "./data/best_death_estimate.csv"
             },
             "key": "country_name",
-            "fields": ["country_id"]
+            "fields": ["best_total"]
           }
         },
         {
-          "lookup": "country_id",
-          "from": {
-            "data": {
-              "url": "./data/GEDEvent_v22_1.csv"
-            },
-            "key": "country",
-            "fields": ["best"]
-          }
+          "filter": "datum.best_total > 0"
         }
       ],
       "mark": {
@@ -56,12 +51,19 @@
       },
       "encoding": {
         "color": {
-          "field": "country_id",
-          "type": "nominal"
+          "field": "best_total",
+          "type": "quantitative",
+          "scale": {
+            "type": "log",
+            "scheme": {
+              "name": "blues"
+            }
+          }
         }
       }
     },
     {
+      "name": "Symbol Map",
       "data": {
         "url": "./data/GEDEvent_v22_1.csv",
         "format": {
@@ -74,7 +76,9 @@
         }
       ],
       "mark": {
-        "type": "circle"
+        "type": "circle",
+        "fill": "red",
+        "opacity": 0.1
       },
       "encoding": {
         "longitude": {
