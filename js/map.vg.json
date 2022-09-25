@@ -82,7 +82,7 @@
       "mark": {
         "type": "circle",
         "fill": "red",
-        "opacity": 0.1
+        "opacity": 0.3
       },
       "encoding": {
         "longitude": {
@@ -97,7 +97,8 @@
           "field": "best",
           "type": "quantitative",
           "legend": {
-            "title": "Deaths (Individual Event)"
+            "title": "Deaths (Individual Event)",
+            "values": [100, 1000, 10000, 50000]
           },
           "scale": {
             "type": "linear"
