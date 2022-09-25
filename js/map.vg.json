@@ -53,6 +53,10 @@
         "color": {
           "field": "best_total",
           "type": "quantitative",
+          "legend": {
+            "title": "Deaths (Country Total)",
+            "values": [1, 10, 100, 1000, 10000, 100000, 400000]
+          },
           "scale": {
             "type": "log",
             "scheme": {
@@ -92,6 +96,9 @@
         "size": {
           "field": "best",
           "type": "quantitative",
+          "legend": {
+            "title": "Deaths (Individual Event)"
+          },
           "scale": {
             "type": "linear"
           }
