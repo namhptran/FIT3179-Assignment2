@@ -1,8 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Map",
+  "title": "Deaths by Organised and State-based Violence (1989-2021)",
   "width": 2000,
   "height": 1000,
+  "view": {
+    "fill": "lightblue"
+  },
   "projection": {
     "type": "equalEarth"
   },
@@ -19,7 +22,7 @@
       "mark": {
         "type": "geoshape",
         "fill": "lightgrey",
-        "stroke": "white"
+        "stroke": "darkgrey"
       }
     },
     {
@@ -47,7 +50,8 @@
         }
       ],
       "mark": {
-        "type": "geoshape"
+        "type": "geoshape",
+        "stroke": "darkgrey"
       },
       "encoding": {
         "color": {
@@ -60,7 +64,7 @@
           "scale": {
             "type": "log",
             "scheme": {
-              "name": "blues"
+              "name": "lightorange"
             }
           }
         }
@@ -81,7 +85,7 @@
       ],
       "mark": {
         "type": "circle",
-        "fill": "red",
+        "fill": "darkred",
         "opacity": 0.3
       },
       "encoding": {
