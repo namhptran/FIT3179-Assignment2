@@ -112,6 +112,59 @@
               }
             ]
           }
+        },
+        {
+          "data": {
+            "url": "./data/GEDEvent_v22_1.csv",
+            "format": {
+              "type": "csv"
+            }
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "time_brush"
+              }
+            },
+            {
+              "sort": [
+                {
+                  "field": "best",
+                  "order": "descending"
+                }
+              ],
+              "window": [
+                {
+                  "op": "rank",
+                  "as": "ranking"
+                }
+              ]
+            },
+            {
+              "filter": "datum.ranking == 1"
+            },
+            {
+              "calculate": "'The most deadly conflict of; the selected period: ' + datum['best']",
+              "as": "text_annotation_raw"
+            },
+            {
+              "calculate": "split(datum.text_annotation_raw,';')",
+              "as": "text_annotation"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "right",
+            "dx": -8,
+            "dy": -8,
+            "baseline": "middle",
+            "fontStyle": "italic"
+          },
+          "encoding": {
+            "text": {
+              "field": "text_annotation"
+            }
+          }
         }
       ]
     },
@@ -119,7 +172,7 @@
       "width": "container",
       "height": 200,
       "mark": "line",
-      "title": "Deaths",
+      "title": "Organised Violent Events",
       "data": {
         "url": "./data/GEDEvent_v22_1.csv",
         "format": {
@@ -131,7 +184,9 @@
           "name": "time_brush",
           "select": {
             "type": "interval",
-            "encodings": ["x"]
+            "encodings": [
+              "x"
+            ]
           }
         }
       ],
@@ -139,14 +194,14 @@
         "x": {
           "field": "date_start",
           "type": "temporal",
-          "timeUnit": "yearmonthdate"
+          "timeUnit": "yearmonthdate",
+          "title": "Start date of event"
         },
         "y": {
-          "aggregate": "sum",
-          "field": "best",
+          "aggregate": "count",
+          "title": "Number of events",
           "scale": {
-            "type": "linear",
-            "domain": [0, 120000]
+            "type": "linear"
           }
         }
       }
