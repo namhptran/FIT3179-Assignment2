@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "data/GEDEvent_v22_1.csv"
+  },
+  "width": "container",
+  "height": 1000,
+  "title": "Deaths by Organised and State-based Violence (1989-2021)",
+  "transform": [
+    {
+      "filter": "datum.best > 20"
+    }
+  ],
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "region_param",
+          "select": {
+            "type": "point",
+            "fields": ["region"]
+          },
+          "bind": "legend"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "color": {
+          "field": "region",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "date_start",
+          "type": "temporal",
+          "title": "Start/End Date"
+        },
+        "y": {
+          "field": "best",
+          "type": "quantitative",
+          "scale": {
+            "type": "log"
+          },
+          "title": "Estimated deaths"
+        },
+        "opacity": {
+          "condition": {
+            "param": "region_param",
+            "value": 1
+          },
+          "value": 0.1
+        }
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "region_param2",
+          "select": {
+            "type": "point",
+            "fields": ["region"]
+          },
+          "bind": "legend"
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "color": {
+          "field": "region",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "date_end",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "best",
+          "type": "quantitative",
+          "scale": {
+            "type": "log"
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "region_param2",
+            "value": 1
+          },
+          "value": 0.1
+        }
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "region_param3",
+          "select": {
+            "type": "point",
+            "fields": ["region"]
+          },
+          "bind": "legend"
+        }
+      ],
+      "mark": {
+        "type": "line"
+      },
+      "encoding": {
+        "color": {
+          "field": "region",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "date_start",
+          "type": "temporal"
+        },
+        "x2": {
+          "field": "date_end"
+        },
+        "y": {
+          "field": "best",
+          "type": "quantitative",
+          "scale": {
+            "type": "log"
+          }
+        },
+        "y2": {
+          "field": "best"
+        },
+        "opacity": {
+          "condition": {
+            "param": "region_param3",
+            "value": 1
+          },
+          "value": 0.1
+        }
+      }
+    }
+  ]
+}

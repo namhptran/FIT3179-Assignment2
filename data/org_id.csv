@@ -1,0 +1,1493 @@
+116	Government of Iraq
+234	IS
+130	Government of Afghanistan
+292	Jam'iyyat-i Islami-yi Afghanistan
+299	Hizb-i Islami-yi Afghanistan
+294	Hizb-i Islami-yi Afghanistan - Khalis faction
+296	Mahaz-i Milli-yi Islami-yi Afghanistan
+300	Hizb-i Wahdat
+301	Military faction (forces of Shahnawaz Tanay)
+302	Junbish-i Milli-yi Islami
+303	Taleban
+304	UIFSA
+141	Government of India
+325	Kashmir insurgents
+131	Government of Tajikistan
+345	UTO
+142	Government of Pakistan
+356	TTP
+3	Government of United States of America
+769	al-Qaida
+57	Government of Russia (Soviet Union)
+1	Civilians
+388	LeJ
+375	Forces of Abdul Rahman Khan
+376	Forces of Amanullah
+377	Forces of Amanullah Khan
+378	Forces of Arbab Basir
+379	Forces of Ismail Khan
+293	Harakat-i Inqilab-i Islami-yi Afghanistan
+297	Ittihad-i Islami Bara-yi Azadi-yi Afghanistan
+801	Hizb-i Wahdat - Akbari faction
+802	Jamiat-ul-Dawa
+803	Shura-yi Nazar-i Shomali
+856	Taleban - Ali Dad faction
+857	Taleban - Mola Khel faction
+2518	Forces of Sayed Mansur Naderi
+6356	Government of United Kingdom, Government of United States of America
+5864	TTP-KM
+5865	TTP-SM
+6194	Forces of Mullah Abdol Rauf Khadim
+6252	High Council of Afghanistan Islamic Emirate
+6318	High Council of Afghanistan Islamic Emirate, IS
+8114	NRF
+49	Government of Serbia (Yugoslavia)
+357	UCK
+109	Government of Algeria
+536	Takfir wa'l Hijra
+537	AIS
+538	GIA
+539	AQIM
+3481	Signed-in-Blood Battalion
+903	GIA - El Ahd Battalion
+1026	GIA - El Khadra Battalion
+904	GIA - El Forkane
+1161	MUJAO
+4171	Arab Brabich
+1568	Idnan (Tuareg)
+99	Government of Angola
+567	UNITA
+540	FLEC-R
+541	FLEC-FAC
+7412	FLEC-FAC-TN
+121	Government of Israel
+366	Hezbollah
+64	Government of Azerbaijan
+338	Republic of Artsakh
+347	Military faction (forces of Suret Husseinov)
+348	OPON Forces
+126	Government of Bahrain
+144	Government of Myanmar (Burma)
+187	RSO
+143	Government of Bangladesh
+285	JSS/SB
+307	NLFT
+1218	JMB
+372	Supporters of Awami League
+374	Supporters of BNP
+804	BCP
+805	PBCP
+2765	Supporters of Jamaat-e-Islami
+3051	ULA
+1165	PBCP-J
+3968	BNLF
+6692	ARSA
+363	NDFB
+807	Laime
+806	Qaqachaca
+7038	Bonde dos 13
+772	Comando Vermelho
+50	Government of Bosnia-Herzegovina
+371	Serbian irregulars
+339	Serbian Republic of Bosnia-Herzegovina
+48	Government of Croatia
+340	Serbian Republic of Krajina
+349	Autonomous Province of Western Bosnia
+370	Croatian irregulars
+350	Croatian Republic of Bosnia-Herzegovina
+3864	Serbian irregulars, Serbian Republic of Bosnia-Herzegovina
+845	Republic of Bosnia-Herzegovina
+337	Republic of Croatia
+102	Government of South Africa
+22	Government of Brazil
+781	Terceiro Comando
+4416	Amigos dos Amigos
+4431	Barriga gang
+4432	Sujeirinha gang
+4462	Terceiro Comando Puro
+4537	Okaida
+4536	Estados Unidos
+6743	FDN
+3176	PCC
+6936	Sindicato RN
+7014	GDE
+7634	Comando Classe A
+8199	Anti-Bala
+8198	Bala na Cara
+8279	Bonde do Maluco
+8280	Katiara
+8285	GDE, PCC
+8292	Associação Família Capixaba
+8293	Cartel do Norte
+8295	Amigos Para Sempre
+8294	Família Terror Amapá
+78	Government of Burkina Faso
+6716	JNIM
+6648	Ansaroul Islam
+6857	Koglweogo
+93	Government of Burundi
+430	Palipehutu
+431	CNDD
+433	Frolina
+432	Palipehutu-FNL
+434	CNDD-FDD
+94	Government of Rwanda
+527	FPR
+619	Hutu rebels
+623	Interahamwe, ex-FAR
+1128	ALiR
+786	Palipehutu-FNL - LP
+915	Hutu
+3514	Tutsi
+3553	FNL-Ubugabo-Burihabwa
+528	FDLR
+6187	Military faction (forces of Godefroid Niyombare)
+6297	FPB
+6513	RED-TABARA
+8175	FRODEBU
+148	Government of Cambodia (Kampuchea)
+147	Government of Thailand
+270	KR
+272	KPNLF
+273	FUNCINPEC
+7248	Forces of Norodom Ranariddh
+7249	Military faction (Forces of Hun Sen)
+84	Government of Nigeria
+1051	Jama'atu Ahlis Sunna Lidda'awati wal-Jihad
+83	Government of Cameroon
+905	Bafanji
+906	Balikumbat
+907	Banya
+3804	Foulbe, Hausa
+910	Choa Arab
+909	Kotoko
+6634	Comités locaux de vigilance
+7332	Ambazonia insurgents
+1752	Musgum
+808	Hells Angels
+809	Rock Machine
+90	Government of Uganda
+488	LRA
+86	Government of Central African Republic
+552	Military faction (forces of André Kolingba)
+553	Forces of Francois Bozize
+554	Seleka
+1053	CPJP
+87	Government of Chad
+88	Government of Congo
+466	SPLM/A
+630	Janjaweed
+1645	FDPC
+3554	FPR
+3555	Christians (CAR)
+3556	Muslims (CAR)
+4201	anti-Balaka
+4007	FPRC
+5999	UPC
+6354	MPC
+6641	3R
+6699	FPRC, MPC
+7000	anti-Balaka, FPRC-AK
+6930	MNLC
+5544	RJ
+6968	Anti-Balaka - Mokom, FPRC, MPC, RPRC
+6845	Anti-Balaka - Mokom
+6982	Peuhl militia (Zemio)
+7306	FPRC, MPC, Self-Defense Mujahidin (CAR)
+7448	MLCJ
+7736	MLCJ, PRNC, RPRC
+7738	MLCJ, RPRC
+7870	CPC
+442	Islamic Legion
+444	MOSANAT
+445	MPS
+446	MDD
+449	Military faction (forces of Maldoum Bada Abbas)
+447	CNR
+448	CSNPD
+450	FNT
+451	FARF
+452	MDJT
+453	FUCD
+454	RAFD
+456	UFDD
+716	AN
+1069	UFR
+1112	FPRN
+112	Government of Sudan
+468	JEM
+594	Darsalim
+637	Kibete
+636	Tama
+705	Zaghawa
+912	Khozam
+911	Oulad Rachid
+1087	Awlad Zeid
+993	Masalit
+676	Rizeigat Abbala
+3998	Toubou
+7151	CCMSR
+1621	Dadjo
+7465	Mouro
+7255	FACT
+1012	Arab
+8248	Kagal, Kibete
+8254	Bulala
+880	MNDAA
+135	Government of China
+2460	Han Chinese
+2461	Uighur
+1156	ETIM
+17	Government of Colombia
+743	FARC
+744	ELN
+746	EPL
+18	Government of Venezuela
+770	ACCU
+771	AUC
+774	Medellín Cartel
+810	Cali Cartel
+811	PEPES
+5631	ELN, FARC
+6506	Bloque Central Bolívar
+6579	MAS
+7013	FARC dissidents
+7074	EPL - Megateo
+6501	ACC
+107	Government of Comoros
+518	Presidential guard
+544	MPA/Republic of Anjouan
+913	MPA - SOC
+546	Ninjas
+545	Cobras
+547	Cocoyes
+548	Ntsiloulous
+95	Government of Somalia
+500	SNM
+96	Government of Djibouti
+530	FRUD
+531	FRUD-C
+98	Government of Eritrea
+717	Al-Shabaab
+664	Oromo
+685	Somali
+972	Forces of Abdurahman Ahmed Ali 'Tur'
+675	Republic of Somaliland
+572	Afar
+89	Government of DR Congo (Zaire)
+422	AFDL
+423	MLC
+424	RCD
+426	CNDP
+489	ADF
+561	BDK
+101	Government of Zimbabwe (Rhodesia)
+425	RCD-ML
+603	FAPC
+606	FNI
+645	Mayi Mayi - Chinja Chinja
+648	Mayi Mayi
+659	Mayi Mayi - Ngilima
+672	Rastas
+674	RCD - LN
+896	PARECO
+1043	RCD - CP
+1076	UPC
+1077	FRPI
+1114	Mayi Mayi Complet
+113	Government of South Sudan
+1160	M23
+1198	Mayi Mayi Simba
+1199	Raia Mutomboki
+3037	NDC
+3040	Nyatura
+3043	CNPSC
+4149	Mayi Mayi Kifuafua, Raia Mutomboki
+3845	MLC, RCD-N
+3846	FNI, FRPI, RCD-K-ML
+3847	FNI, FRPI
+3848	FRPI, RCD-K-ML
+3851	MLC, RCD-N, UPC
+3859	FAPC, FNI
+577	Alur
+638	Lendu
+895	Bangadi Militia
+647	Bena Kapuya
+646	Bena Nshimba
+616	Hema
+673	FRF
+789	RCD-K-ML
+653	RCD-N
+914	Hunde
+1074	Banyarwanda
+3860	Hunde, Nyanga
+3854	CNDD-FDD , Mayi Mayi
+1075	PUSIC
+1136	FDC
+3857	ALiR, Mayi Mayi
+3875	ALiR, CNDD-FDD , Mayi Mayi
+3880	Bafulero, Bavira
+1196	Banyamulenge
+1200	APCLS
+3430	Banunu
+3431	Batende
+3861	Interahamwe, ex-FAR, MAGRIVI
+3953	FLC
+3967	Kata Katanga
+4130	M23-R
+4286	Forces of Paul Joseph Mukungubila
+4314	Groupe de Sécurité (Nyatura Kasongo)
+5821	Raia Mutomboki - Bravo
+5822	Raia Mutomboki - Makombo
+4383	Baluba
+2398	Batwa
+2397	Nande
+3441	Bafulero
+5976	Banyamulenge, Barundi
+5997	Mayi Mayi - Makabe
+6185	Elements (Luba militia)
+6186	Perci (Batwa militia)
+3518	UPCP
+6587	Mayi Mayi Mazembe
+6590	Kamuina Nsapu
+6585	APCLS, FDLR, Nyatura Love
+6683	Mayi Mayi Mazembe, NDC-R
+7087	Chokwe, Pende
+7088	Baluba, Lulua
+6739	Bana Mura
+6740	MNR
+6491	NDC-R
+6802	ADF, Mayi Mayi Mayangose
+6807	ADF, Vuba militia
+6894	UPLC
+6684	CNRD
+6918	Twiganeho
+6920	CMC
+6960	Bambuti, Batwa
+6756	Batabwa
+5801	FDLR-RUD
+7089	Bahemba
+6942	Bambuti
+7230	FPP-AP
+7269	APCLS-R, NDC-R
+7288	CMC, NDC-R
+7330	APCLS, CMC
+7197	Ngumino, Twiganeho
+7194	Ngumino
+7463	URDPC
+7098	RNL
+7641	Mayi Mayi Luwotu, RNL
+7755	AFP-Gutabara
+7644	FPIC
+7734	Zaire self-defense group
+7752	NDC-R-GBS
+7760	AFP-Gutabara, RED-TABARA , Twiganeho
+8015	FPP-AP, NDC-R-GBS
+7134	Nyatura Nduhuye
+6833	Raia Mutomboki Butachibera
+7735	AFP-Gutabara, Ngumino
+7938	CODECO-BTD
+8270	Iyeke (Batwa)
+8271	Nkundo
+20	Government of Ecuador
+21	Government of Peru
+773	Huaorani
+780	Tagaeri
+7971	Los Choneros
+8012	Los Chone Killers , Los Lobos , Los Pipos, Los Tiguerones
+8009	Los Lobos
+209	Hamas
+117	Government of Egypt
+341	al-Gama'a al-Islamiyya
+395	Tawhid wal Jihad
+1132	Copts (Egypt)
+1133	Muslims (Egypt)
+1183	Supporters of al-Ahly football team
+1184	Supporters of al-Masry football team
+3307	Opponents of Morsi
+3306	Supporters of Morsi
+4319	Ansar Bayt al-Maqdis
+5792	Bani Hilal
+5793	Nubian Dabudiya
+6616	Harakit Sawa'id Misr
+6844	Jama'at Ansar al-Islam
+13	Government of El Salvador
+755	FMLN
+495	EIJM - AS
+97	Government of Ethiopia
+410	TPLF
+414	EPRDF
+413	Military faction (forces of Amsha Desta and Merid Negusie)
+416	EPLF
+542	AIAI
+497	ONLF
+520	ARDUF
+551	OLF
+91	Government of Kenya
+635	Kereyou
+624	Issa (Dir)
+578	Amaro
+613	Guji
+581	Anuak
+598	Dinka
+660	Nuer
+709	Bi'idyahan subclan of Majerteen clan (Darod)
+710	Ismail subclan of Makahil clan (Darod)
+591	Borana
+1039	Konso
+3807	Gabra, Garre
+592	Burji
+596	Dawa
+614	Gura
+919	Derashe
+601	Dizi
+688	Suri
+712	Nyangatom
+693	Turkana
+609	Gabra
+899	Gumuz
+706	Lou Nuer
+655	Murle
+711	Majerteen subclan (Darod)
+644	Marehan subclan (Darod)
+663	Ogaden clan (Darod)
+713	Dassanetch
+682	Sheikhal clan (Dir)
+916	Amhara
+917	Arbore
+918	Degodia
+1079	Garre
+3805	Borana, Guji
+920	Zeyle
+921	Gedeo
+922	Rer Liban subclan of Habr Awal (Issaq)
+923	Rer Samatar subclan of Habr Awal (Issaq)
+924	Ajuran
+1073	Highlanders
+1078	Tishana-Me’en
+1027	Geri
+1081	Makahin
+1083	Ari
+1084	Mursi
+1115	IGLF
+1123	SPLM/A-North
+1215	Forces of Harar garrison
+6294	Hamar (Ethiopia)
+7201	Gamo, Guraghe
+7204	Dorze, Gamo, Guraghe, Silt'e, Wolayta
+7260	Qimant
+7438	Military faction (forces of Asaminew Tsige)
+7595	OLA
+7792	Ale
+7836	Amhara, Guraghe
+7880	Amhara, Oromo, Shinasha
+7942	Agaw, Amhara
+7963	Government of Eritrea, Government of Ethiopia
+8326	Agaw, Amhara, Shinasha
+207	Fatah
+35	Government of Spain
+313	ETA
+145	Government of Sri Lanka
+320	LTTE
+71	Government of Gambia
+63	Government of Georgia
+332	National Guard and Mkhedrioni
+333	Zviadists
+342	Republic of Abkhazia
+343	Republic of South Ossetia
+352	Chechen Republic of Ichkeria
+3824	Forest Brothers, White Legion
+813	White Legion
+114	Government of Iran
+164	KDPI
+28	Government of United Kingdom
+282	PIRA
+570	Abudu
+892	Andani
+1057	Kusasi
+1058	Mamprusi
+1060	Gonja
+3803	Konkomba, Nawuri
+3802	Dagomba, Gonja, Nanumba
+1062	Konkomba
+11	Government of Guatemala
+732	URNG
+1088	Los Zetas
+776	Mara 18 (Guatemala)
+777	Mara Salvatrucha (Guatemala)
+782	Gulf Cartel
+775	Sinaloa Cartel
+77	Government of Guinea
+463	RFDG
+532	RUF
+696	ULIMO - K
+533	AFRC
+1116	LDF
+1071	Torma
+1072	Torma Manian
+1141	Kpelle
+1139	Malinké
+1713	Konianke
+7813	Konianke, Malinké
+73	Government of Senegal
+529	MFDC
+70	Government of Guinea-Bissau
+549	Military Junta for the Consolidation of Democracy, Peace and Justice
+1045	Buxton gang
+6	Government of Haiti
+763	Military faction (forces of Himmler Rebu and Guy Francois)
+764	Military faction (forces of Raol Cédras)
+765	FLRN
+766	OP Lavalas
+850	Supporters of Jean-Bertrand Aristide
+851	Supporters of Roger Lafontant
+7793	G9 an Fanmi e Alye
+7886	Delmas 19 gang , Delmas 6 gang, Delmas 95 gang, Nan Barozi gang, Nan Belekou gang, Nan Boston gang, Nan Chabón gang, Nan Ti Bwa gang, Pilate Base gang, Simon Pele gang, Wharf de Jeremie gang
+8104	G Pep
+778	Mara Salvatrucha (Honduras)
+1099	Mara 18 (Honduras)
+193	PWG
+194	MCC
+195	CPI-Maoist
+223	NSCN-IM
+306	ATTF
+314	PLA
+315	UNLF
+317	KCP
+318	PREPAK
+319	Sikh insurgents
+326	ULFA
+362	ABSU
+1066	NDFB - RD
+369	PULF
+368	DHD - BW
+373	BLTF
+392	Ranvir Sena
+396	UPDS
+397	VHP
+883	DHD
+884	KRA
+885	HPC
+1047	Indian Mujahideen
+1070	Lashkar-e-Taiba
+1185	PCPA
+1187	PLFI
+224	NSCN-K
+798	NSCN-U
+814	Bodo
+815	Santhal
+816	HuM
+817	JKLF
+387	Kuki
+818	Naga
+858	Hindus (India)
+859	Muslims (India)
+878	Paite
+597	Dimasa
+1180	Zeme Naga
+2430	NSCN-K-K
+2922	Assamese
+2939	NLFT-B
+3057	Bangladeshi Immigrants
+3946	CPI-ML-J
+3955	CPI-ML-VM
+1163	GNLA
+3963	Tripura Non-Tribal Communities
+3404	Tripura Tribal Communities
+4044	Bihari
+5546	Al-Umma
+5826	NDFB-S
+6320	UNLFW
+2907	Meitei
+6779	Pangal
+155	Government of Indonesia
+266	OPM
+290	CNRT
+327	GAM
+385	Jemaah Islamiya
+1104	Laskar Jihad
+819	Dayak
+820	Madurese
+860	Christians (Indonesia)
+861	Muslims (Indonesia)
+3825	Dayak, Malay (Indonesia)
+261	PUK
+308	MEK
+309	PJAK
+310	Jondullah
+115	Government of Turkey
+323	PKK
+4364	Jaish al-Adl
+231	SCIRI
+233	Ansar al-Islam
+235	RJF
+260	KDP
+125	Government of Kuwait
+3822	Government of Australia, Government of United Kingdom, Government of United States of America
+384	Jamaat Jund al-Sahaba
+886	AAH
+783	1920 Revolution Brigades
+821	Dereiat
+822	al-Shaman
+823	IMK
+118	Government of Syria
+4456	Syrian insurgents
+5659	al-Mahdi Army
+4359	JRTN
+4357	Jaysh al-Mukhtar
+205	PFLP
+206	PFLP-GC
+208	PIJ
+210	PNA
+211	AMB
+212	PRC
+5667	Jund Ansar Allah
+79	Government of Liberia
+507	NPFL
+76	Government of Ivory Coast
+556	MPCI
+557	MPIGO
+555	MJP
+558	FRCI
+639	LPC
+1131	AJPSN
+605	FN - IC
+652	MILOCI
+1015	Supporters of Laurent Gbagbo
+1016	Supporters of Alassane Outtara
+1110	Burkinabé
+1109	Guéré
+599	Dioula
+1111	Senufo
+1296	Bete
+1125	FDSI-CI
+607	Fulani
+6664	Koulango , Lobi, Malinké
+7163	FRGO
+824	Supporters of JLP
+825	Supporters of PNP
+6333	Southern Front
+120	Government of Jordan
+505	ARS/UIC
+704	SLDF
+714	Mungiki
+612	Garre subclan of Digil clan (Digil-Mirifle)
+656	Murule subclan of Gugundabe clan (Hawiye)
+633	Jie
+1024	Kalenjin
+926	Kikuyu
+927	Kisii
+901	Luo
+902	MDF
+3806	Nyangatom , Toposa
+670	Pokot
+681	Sabiny
+683	Rer Ahmad subclan (Hawiye)
+684	Hawarsame Rer Hasan and Habar Ya'qub subclan of Marehan clan (Darod)
+692	Toposa
+925	Samburu
+928	Luhya
+3816	Kisii, Luo
+1030	Maasai
+929	Marakwet
+930	Nandi
+3815	Orma, Wardei
+933	Pokomo
+3814	Pokot, Samburu
+1040	Karimojong
+1029	Matheniko Karimojong
+1038	Dodoth
+931	Orma
+4463	Burji, Gabra
+7112	Chiebiliew Yoal (Lou Nuer)
+7113	Cie Bol
+1212	Government of eSwatini (Swaziland)
+133	Government of Uzbekistan
+359	IMU
+854	Kyrgyz
+853	Uzbek
+132	Government of Kyrgyzstan
+149	Government of Laos
+246	LRM
+119	Government of Lebanon
+242	Forces of Michel Aoun
+243	Lebanese Forces
+879	PSP
+239	Amal
+826	Fatah Revolutionary Council
+827	SLA
+1194	Alawite (Lebanon)
+1195	Sunni (Lebanon)
+1170	Jabhat Fateh al-Sham
+4183	Brigades of Aisha
+4233	ADP
+6815	HTS
+6866	HTS, Saraya Ahl al-Sham
+104	Government of Lesotho
+550	Military faction (Lesotho)
+508	INPFL
+509	LURD
+510	MODEL
+80	Government of Sierra Leone
+695	ULIMO - J
+697	ULIMO
+3818	NPFL, ULIMO - K
+3819	AFL, LPC, ULIMO - J
+111	Government of Libya
+3876	Gontrar, Zintan
+1188	Mashashia
+1127	Forces of Muammar Gaddafi
+1126	NTC
+4371	Awlad Suleiman
+4370	Qadhadhfa
+5802	Forces of the House of Representatives
+4369	Benghazi Revolutionaries Shura Council
+5940	Zintan Military Council
+5861	Libya Dawn
+6371	DPF
+6400	Ajdabiya Revolutionaries Shura Council
+937	Tuareg
+6403	Zuwaya
+6698	SDB
+1162	SRF
+6701	Subol Al-Salam Brigade
+6814	Forces of Khalifa al-Ghawil
+6893	PFLL
+6955	Anas al-Dabbashi Brigade, Brigade 48
+6842	Operations Room Combating Daesh, Shuhada al-Wadi militia
+7046	ASL
+7072	LNA
+7049	February 17 Martyrs Brigade, Rafallah al-Sahati Brigade
+7108	Forces of Ibrahim Jadhran
+7124	Awlad Busayf, Awlad Suleiman
+7139	Brigade 301, Ghaniwa Brigade, Nawasi Battalion, TRB
+6902	Kaniyat
+7215	Jabhat al-Samud, Kaniyat
+7164	TPF
+7231	Shabab al-Tawhid wa al-Aqiyda
+7456	Ahali
+47	Government of North Macedonia
+361	UCK
+106	Government of Madagascar
+1003	Supporters of Andry Rajoelina
+1041	Supporters of Marc Ravalomanana
+1017	Supporters of Didier Ratsiraka
+154	Government of Philippines
+277	ASG
+152	Government of Malaysia
+4006	Sultanate of Sulu
+72	Government of Mali
+521	MPA
+522	FIAA
+523	ATNMC
+74	Government of Mauritania
+75	Government of Niger
+715	MPGK
+3820	ARLA, FIAA, FPLA
+1013	Kounta
+1219	Dogon
+3872	AQIM, Jama'atu Ahlis Sunna Lidda'awati wal-Jihad, MUJAO
+1158	CMA
+3873	MUJAO, Signed-in-Blood Battalion
+934	FPLA
+1157	Ansar Dine
+3157	Ganda Iso
+1164	Military faction (Red Berets)
+4376	al-Murabitun
+4380	MAA
+6267	FLM
+5880	GATIA
+6349	CM-FPR, GATIA, MAA
+6769	Dozos (Mali)
+6837	GATIA, MSA
+6836	MSA
+7092	Dan na Ambassagou
+1018	Mauritanian
+1019	Senegalese
+10	Government of Mexico
+767	EZLN
+768	EPR
+779	Paz y Justicia
+793	Juarez Cartel
+799	Tijuana Cartel
+800	Tijuana Cartel - El Teo faction
+828	Garcia clan
+829	Peña Rojas clan
+877	Santiago Xochiltepec
+876	Santo Domingo Teojomulco
+1089	Beltrán Leyva Cartel
+1090	Beltrán Leyva Cartel - Valdez Villareal faction
+1149	La Familia
+1150	Los Caballeros Templarios
+1151	Jalisco Cartel New Generation
+1152	Cartel Independiente de Acapulco
+1153	La Barredora
+1154	La Resistencia
+3296	Los Zetas - Cártel del Noreste faction
+3297	Los Zetas - Old School Zetas faction
+3298	Guerreros Unidos
+3299	Los Rojos
+3323	Los Zetas - Velazquez Caballero faction
+4475	Autodefensas Unidas de Michoacán
+4486	Gulf Cartel - Ramirez Treviño faction
+4487	Gulf Cartel - Villareal faction
+4492	La Mochomera
+6003	Gulf Cartel - Dragones de Sheyla faction
+6002	Gulf Cartel - Los Fresitas faction
+6008	Sinaloa Cartel - Los Chavez Matamoros faction
+6007	Sinaloa Cartel - Los Salgueiro faction
+6009	Los Ardillos
+6481	Sinaloa Cartel - Los Memos faction
+6482	Sinaloa Cartel - Los Salazar faction
+6485	Forces of Damaso
+6487	Sinaloa Cartel - El Pepillo faction
+6486	Sinaloa Cartel - Los 28 faction
+6573	Los Zetas - Jorge Ivan Hernandez Cantu faction
+6574	Los Zetas - Juan Pedro Salvador Saldivar Farias faction
+6704	La Nueva Familia
+7187	Nueva Plaza Cartel
+7238	Fuerza Anti Unión
+4465	La Union de Tepito
+7256	Santa Rosa de Lima Cartel
+6122	Los Aztecas
+7381	La Linea
+7647	CRAC-PF
+7795	Sinaloa Cartel - Chapitos faction
+7796	Sinaloa Cartel - Los Mayos faction
+7984	Caborca Cartel, Sinaloa Cartel - Los Mayos faction
+8003	Los Virus
+8006	Los Tlacos
+8095	Carteles Unidos
+8234	Gulf Cartel, La Familia, Sinaloa Cartel
+7395	Cartel del Sur
+7399	Grupo Escorpion
+6483	Gulf Cartel - Los Ciclones faction
+8339	Los Colombianos
+8338	Los Maya
+55	Government of Moldova
+344	PMR
+108	Government of Morocco
+563	POLISARIO
+393	Salafia Jihadia
+100	Government of Mozambique
+498	Renamo
+938	Naparama
+7032	Ansar al-Sunnah
+180	KNU
+181	God's Army
+1107	DKBA 5
+185	ABSDF
+190	NMSP
+191	BMA
+201	KIO
+225	KNPP
+255	MTA
+256	RCSS
+364	UWSA
+785	DKBA
+830	MDA
+831	MDA - LM
+2698	Buddhists (Myanmar)
+2699	Muslims (Myanmar)
+1122	SSPP
+5965	PSLF
+8060	NUG
+146	Government of Nepal
+258	CPN-M
+784	MJF
+14	Government of Nicaragua
+759	Contras
+525	CRA
+543	FDR
+524	FLAA
+526	UFRA
+562	MNJ
+6503	Daoussak (Tuareg)
+8259	Banibangou Vigilance Committee
+559	Ahlul Sunnah Jamaa
+560	NDPVF
+588	Bakassi boys
+1193	FNDIC
+893	Supporters of ACN
+668	Supporters of PDP
+571	Supporters of AD
+580	Supporters of ANPP
+702	Yugur
+643	Mambila
+611	Gamai
+666	Pan
+608	Hausa
+621	Igbo
+689	Tarok
+701	Yoruba
+622	Ijaw
+625	Itsekiri
+626	Izzi (Igbo)
+694	Ukele
+657	NDV
+939	Adoni
+1031	Ogoni
+940	Azara
+1032	Tiv
+941	Efik
+942	Ibibio
+943	Wurukum
+3798	Afisare, Anaguta, Birom
+3800	Fulani, Hausa
+945	Ninzam
+946	Ife
+947	Modakeke
+948	Ilaje
+949	Urhobo
+950	Jukun
+951	Karimjo
+952	Kwala
+954	Ndoki
+955	Eleme
+1033	Okrika (Ijaw)
+957	Aguleri
+956	Umuleri
+3795	Ijaw, Urhobo
+1002	Afor
+1014	Atyap
+3797	Igbo, Yoruba
+1020	Christians (Nigeria)
+1021	Muslims (Nigeria)
+1022	Bini
+1023	Supporters of UNPP
+1094	Boje
+1095	Nsadop
+589	Birom
+1118	Oleh (Isoko)
+1119	Olmoro (Isoko)
+1140	Sayawa
+1134	Ezilo
+1135	Ezza
+1167	Deebam
+1168	Deewell
+3871	Black Axe, Bush Boys, Deebam, KK, NDV
+1169	Outlaws
+1171	Alago
+1172	Eggon
+1173	Greenlanders
+1189	Isenasawo
+1190	Isongo-furo
+1191	Forces of Agala
+1192	Forces of Edu
+3107	Black Axe
+3108	Eyie
+3116	Maphite
+3981	NURTW-Auxiliary
+3332	NURTW-Tokyo
+4000	Yan Gora
+4022	Atakar
+4120	Agatu
+1487	Kuteb
+4290	Ikpanya (Ibibio)
+5787	Supporters of APC
+6001	Gwandere
+6287	IPOB
+6659	Ikot-Offiong community
+6660	Oku Iboku community
+6765	Wanhihem community
+6766	Wanikade community
+6767	Kadara
+6805	Irigwe
+3103	Bwatiye
+7079	Bassa Kwomu
+7240	Egbura Mozum
+7026	Yandang
+7372	Yan Sakai
+7373	Lunguda
+4274	Waja
+7428	Ikurav (Tiv)
+7427	Shitile (Tiv)
+7593	Abugbe (Agatu)
+7592	Agbaduma (Agatu)
+7700	Jole
+7701	Shomo
+7720	Ichen
+7721	Chabo
+8058	Bonta Boys
+8151	Korri
+1166	BLF
+287	BLA
+288	Baloch Ittehad
+289	BRA
+354	MQM
+1046	Fedayeen Islam
+399	Lashkar-e-Islam
+3047	TTP-Islahi
+3192	UBA
+398	Ansaar ul-Islam
+790	Bangesh
+791	Turi
+787	Lashkhar of Wazir tribe
+792	Forces of Shah Sahib
+794	Kachai sub-tribe of Bangesh
+795	Mishti
+796	Lashkar of Salarzai tribe
+797	Mangal
+832	MQM-H
+887	Lashkar of Orakzai tribe
+888	Forces of Turkestan Bhittani
+1100	Forces of Momin Afridi
+1101	TTP - TA
+1102	TTP - MR
+1103	TTP - MT
+1142	Lashkar of Zakakhel tribe
+1143	Laskhar of Masozai Qaumi tribe
+1155	Lashkar of Kukikhel clan
+1177	Lashkar of Akakhel tribe
+2848	Mohajir
+2847	Pashtun
+2849	Sindhi
+2864	Jatoi
+2863	Meher
+2941	Supporters of MQM
+2930	Supporters of PPP
+2952	Khadadkhel
+2951	Oatizai
+2953	Supporters of Yousaf Ali Khan Magsi
+2954	Supporters of Zulfikar Ali Khan Magsi
+2987	Lashkar of Mohmand tribe
+1178	Tawheed ul-Islam
+5895	Jaish-ul-Islam
+5928	Jamaat-ul-Ahrar
+7542	BRAS
+16	Government of Panama
+761	Military faction (forces of Moisés Giroldi)
+157	Government of Papua New Guinea
+328	BRA
+833	Wagia subclan of Takima
+834	Wayai subclan of Takima
+836	Unjamap
+835	Wogia-Tunjup
+4467	Akibu
+4468	Tonakau
+3228	Akul
+3229	Kambrip
+7632	Oi Kuru
+7633	Libe Koi
+8021	Agarabi
+8020	Tapo
+24	Government of Paraguay
+724	Military faction (forces of Andres Rodriguez)
+750	Sendero Luminoso
+751	MRTA
+169	CPP
+170	Military faction (forces of Honasan, Abenina & Zumel)
+275	MNLF
+276	MILF
+278	MNLF - NM
+279	MNLF - HM
+882	Ampatuan militia
+2933	Al-Khobar
+390	Lumad
+391	Moro
+837	Hadji Faizal Abdulkarim clan
+838	Hadji Masir Ahalul clan
+848	Forces of Jing Caludtiag
+849	Forces of Randy Karon
+872	Christians (Philippines)
+873	Muslims (Philippines)
+1146	BIFM
+6578	Maute group
+6998	al-Harakat al-Islamiyah
+6999	BIFM-K
+56	Government of Romania
+329	NSF
+6137	Military faction (forces of Nicolae Ceausescu)
+330	Republic of Armenia
+331	APF
+351	Parliamentary Forces
+358	Wahhabi movement of the Buinaksk district
+367	Forces of the Caucasus Emirate
+382	Gazotan Murdash
+840	Armenian
+839	Azeri
+841	Forces of Ruslan Labazanov
+842	Provisional Council of the Chechen Republic
+843	Republic of Georgia
+852	Meskhetian Turk
+61	Government of Ukraine
+5839	LPR
+123	Government of Yemen (North Yemen)
+6254	Forces of Hadi
+649	MFDC - FN
+650	MFDC Front Nord - MD
+651	MFDC - S
+336	Republic of Slovenia
+846	SAO Eastern Slavonia, Baranja and Western Symria
+847	SAO Krajina
+534	Kamajors
+535	WSB
+501	SPM
+502	USC/SSA
+503	USC/SNA
+504	SRRC
+1004	Hizbul Islam
+678	RRA
+974	SPM/SNA
+1028	Abgal clan (Hawiye)
+891	Xawaadle clan (Hawiye)
+569	Abtisame subclan of Galje'el clan (Hawiye)
+573	Afi subclan of Galje'el clan (Hawiye)
+575	Agon-Yar subclan of Abgal clan (Hawiye)
+699	Warsangeli subclan of Abgal clan (Hawiye)
+894	Ahlu Sunna Waljamaca
+576	Ali-Gaf subclan of Abgal clan (Hawiye)
+642	Mahadade subclan of Abgal clan (Hawiye)
+584	ARPCT
+593	Dabare subclan of Digil clan (Digil-Mirifle)
+640	Luway subclan of Mirifle clan (Digil-Mirifle)
+595	Da'ud subclan of Abgal clan (Hawiye)
+600	Dir clan
+680	Sa'ad subclan of Habar Gidir clan (Hawiye)
+602	Duduble subclan of Gorgorte clan (Hawiye)
+687	Suleiman subclan of Habar Gidir clan (Hawiye)
+568	Forces of Abdullahi Yusuf
+627	Forces of Jama Ali Jama
+897	Gaadsan subclan of Biimaal clan (Dir)
+898	Ma'alin Weyne subclan of Mirifle clan (Digil-Mirifle)
+610	Galje'el clan (Hawiye)
+631	Jejele subclan of Jibedi clan (Hawiye)
+618	Huber subclan of Mirifle clan (Digil-Mirifle)
+700	Yantar subclan of Mirifle clan (Digil-Mirifle)
+634	JVA
+788	JVA faction
+1082	Forces of General Morgan
+604	Fiqi Muhumud subclan (Dir)
+654	Mohamed Muse subclan of Abgal clan (Hawiye)
+671	Puntland State of Somalia
+677	RRA - MH
+1121	Saleban Abdalla subclan of Surre clan (Dir)
+698	USC/SSA - OMF
+958	Abdalle subclan of Habar Awal clan (Isaaq)
+959	Aidagalla subclan of Habar Garhadjis clan (Isaaq)
+960	Abdalleh-Agon-Yar subclan of Abgal clan (Hawiye)
+961	Eli-Agon-Yar subclan of Abgal clan (Hawiye)
+962	Abdulleh-Galmaha subclan of Abgal clan (Hawiye)
+963	Kabaloh subclan of Abgal clan (Hawiye)
+964	Galgalo
+965	Forces of Omar Jess
+966	Ayr subclan of Habar Gidir clan (Hawiye)
+968	Abdalle-Aroneh subclan of Abgal clan (Hawiye)
+967	Eli-Omar subclan of Abgal clan (Hawiye)
+969	Forces of Abdirizak Bihi
+970	Forces of Ahmed Sheikh Buraleh
+971	Forces of Hussein Ali Ahmed
+632	Jiddo subclan of Digil clan (Digil-Mirifle)
+1034	Habar Gidir clan (Hawiye)
+1105	SNM - 'Calan cas'
+1035	SNF
+973	SNF - MSAB
+499	SSDF
+975	DSA
+976	USC/SNA - OA
+977	USC-PM
+1098	Qubeys subclan (Dir)
+1096	Mujahideen in the Golis Mountains
+1120	Forces of Yussuf Hajji Nur
+1147	SVA
+3211	Khatumo administration
+6798	Bahararsame subclan of Dhulbahante clan (Darod)
+6799	Qayaad subclan of Dhulbahante clan (Darod)
+4322	Aaro Aaro
+7206	Ma'awisley
+7229	Biide subclan of Habar Jeclo (Isaaq)
+7228	Sa'ad subclan of Habar Yonis (Isaaq)
+7934	Awramale subclan (Darod)
+586	AWB
+665	PAC
+513	ANC
+1117	IFP
+978	ANC - 'Greens'
+979	ANC - 'Reds'
+1086	Supporters of ANC
+980	Supporters of AZAPO
+982	CATA
+981	Codeta
+620	Supporters of IFP
+983	Supporters of UDF
+984	Mangweni clan
+985	Mgodini clan
+986	Supporters of UDM
+988	NUM
+987	Uwusa
+990	Lagunya
+989	Webta
+8245	Black
+8244	Indian
+469	SLM/A
+582	Agar Dinka
+583	Gok Dinka
+708	Bor Dinka
+992	Jikany Nuer
+1007	Bari
+1042	Mundari
+1097	Rek Dinka
+1025	Misseriya
+1005	Ngok Dinka
+1137	Gony Dinka
+1138	Thiyic Dinka
+1220	Bul Nuer
+1009	Luac Jang Dinka
+1224	Balanda
+3563	SSDM/A - Cobra Faction
+3568	Amothnhom Dinka
+3569	Panyon Dinka
+1108	SSDM/A
+1124	SSLM/A
+4226	SPLM/A - IO
+3587	Aguok
+6225	Apuk Giir
+6344	Kuei Dinka, Pakam Dinka
+6343	Rup Dinka
+6632	Panyar Dinka
+1939	Waat Dinka
+6633	Panyar Dinka, Rek Dinka
+6794	NAS
+1008	Aliap Dinka
+1092	Atuot Dinka
+6341	Pakam Dinka
+6929	Ingessana
+6685	Uduk
+6943	Ayiel Dinka
+7034	Jalwau Dinka
+7189	Kongor Dinka, Lou Dinka
+7210	Gok Dinka, Jalwau Dinka
+7211	Luac Jang Dinka, Thiyic Dinka
+7302	Gak Dinka
+7303	Manuer Dinka
+7409	Latuka
+1011	Pari
+7626	Twic Dinka
+5885	MDF
+7322	Pagok Dinka
+7811	Apuk Padoc
+7812	Atok Buk
+7894	Bor Dinka, Lou Nuer
+7896	Bor Dinka, Gawaar Nuer, Lou Nuer
+5843	South Sudanese
+1977	Sudanese
+7625	Gawaar Nuer
+8097	Buya
+8110	Lou Paher
+8132	Lou Paher, Thiyic Dinka
+8133	Azande
+8255	Cie Kho
+8256	Cie Guandong
+8201	SPLM/A - IO - Kitgwang faction
+383	GICM
+281	JVP
+322	EPRLF
+389	LTTE - K
+844	PLOTE
+875	Supporters of PA
+874	Supporters of UNP
+4004	Muslims (Sri Lanka)
+2297	Tamil
+443	Revolutionary Forces of 1 April
+467	NDA
+470	NRF
+471	SLM/A - MM
+472	SLFA
+686	SSDF
+707	Didinga
+615	Habaniya
+703	Rizeigat Baggara
+617	Hotiya Baggara
+3834	Mahamid, Mahariba, Newiba
+629	Janjaweed - Bin Kulaib faction
+628	Janjaweed - Moro faction
+900	Hol Dinka
+641	Ma'aliyah
+667	PDF
+690	Terjam
+991	Awlad Omran clan (Misseriya)
+1036	Awlad al-Zuid clan (Misseriya)
+3832	Beni Halba Baggara, Salamat Baggara
+996	Fur
+997	SPLM/A - AH
+998	SPLM/A - WN
+1037	SSUM/A
+491	UNRF II
+490	WNBF
+1006	Shiluk
+1010	Awan Dinka
+1093	Ciek Dinka
+1148	Jur Beli
+1972	Northern Sudanese
+1973	Southern Sudanese
+994	Salamat Baggara
+3579	Al-Zayadia
+3580	Berti
+1129	Republic of South Sudan
+1945	Beni Hussein
+4203	Awlad Heiban clan (Misseriya)
+4532	Awlad Metanin clan (Misseriya), Awlad Serur clan (Misseriya)
+995	Beni Halba Baggara
+1923	Gimir
+1080	Hamar
+5849	SARC
+5866	Darfur Joint Resistance Forces
+4204	Awlad Serur clan (Misseriya)
+6695	Mahadi
+1948	Kababish
+6792	SPLM/A-North - MA faction
+7415	SLM/A - MA
+7414	SLM/A - SB
+1897	Beni Amir
+1963	Nuba
+7605	Newiba, Rizeigat Abbala
+7832	Mahariya, Mima
+7962	Hawazma
+1941	Taisha
+8138	Kawahla, Kenana, Nuba Logan
+8099	Dar Ali (Hawazma)
+8137	Kenana
+1144	Opponents of al-Assad
+1145	Supporters of al-Assad
+4168	Ghuraba al-Sham, Jabhat Fateh al-Sham
+4163	PYD
+5540	IS, Jabhat Fateh al-Sham
+5558	Jabhat al-Akrad, PYD
+3232	al-Tawhid Brigade
+5565	Ahfad al Rasoul Brigade, Ahrar al-Sham, IS, Islamic Kurdish Front, Jabhat Fateh al-Sham
+5567	Ahrar al-Sham, al-Tawhid Brigade, IS, Jabhat Fateh al-Sham
+5563	Ahfad al Rasoul Brigade
+5575	Islamic Front
+6011	SRF
+6012	Mujahideen Army
+6014	Islamic Front, Mujahideen Army, SRF
+6015	Harkat Hazm
+6038	Jabhat Fateh al-Sham, Liwa al-Aqsa
+6040	Islamic Front, Jabhat Fateh al-Sham
+6069	Islamic Front, Jabhat Fateh al-Sham, Mujahideen Army
+6288	SDF
+6367	Jaysh al-Sanadid, Khabour Guards, MFS, PYD
+6370	Jaysh al-Sanadid, MFS, PYD
+6378	Aknaf Bait al-Maqdis, Jaysh al-Islam, Sham al-Rasul Brigade, Southern Front
+6380	Jaysh al Fatah Idlib
+5554	Ahrar al-Sham
+6390	Eastern Qalamoun Operations Room
+6377	Jaysh al-Islam
+6419	Euphrates Vulcano
+6436	Fatah Halab
+6495	Fatah Halab, Jabhat Fateh al-Sham
+6389	Ahrar al-Sham, Jabhat Fateh al-Sham
+6532	Ahrar al-Sham, Jabhat Fateh al-Sham, Southern Front
+6553	NSA
+6037	Liwa al-Aqsa
+6564	Mare’ Operations Room
+6572	Ahrar al-Sham, Furqan Brigades, Jabhat Fateh al-Sham, Jaysh al-Islam, Yarmouk Army
+6302	Jaysh al-Jihad (Saraya al- Jihad)
+6599	Hawar Kilis Operations Room
+6600	Jaysh al-Islam, Jaysh Usud al-Sharqiya, Martyr Lieutenant Ahmed Abdou Brigades, Rahman Corps
+6306	Tahrir al- Sham Army
+6605	Jaysh al-Asha’er
+6410	Eastern Ghouta Unified Military Command
+6825	HTS, Rahman Corps
+6828	Hamza Division, Liwa al-Sultan Murad
+6434	Nour al-Din Zenki
+7036	HTS, Southern Front
+7042	Ahrar al-Sham, FSA, HTS, Jaysh al-Islam
+7056	Ahrar al-Sham, HTS, Southern Front
+7105	Syrian Liberation Front
+7106	Suqour al-Sham, Syrian Liberation Front
+7118	Tanzim Hurras ad-Din
+7150	Jaysh al-Sanadid, PYD
+7155	Aknaf Bait al-Maqdis, HTS, Jaysh al-Islam
+7128	National Front for Liberation
+7523	National Front for Liberation, SNA
+7371	Tajamu Shuhada al-Sharqiya
+7426	al-Qa'qa Brigade, Army of Ahl al-Sunni wal Jamaa , Army of al-Ikhlas, Army of Maoata al-Islami, Authenticity and Development Front, Bayareq al-Shaaitat , Islamic Front, Jabhat Fateh al-Sham, Jaish al-Muhajireen wal-Ansar, Liwa al-Qadisiya
+7437	Islamic Front, Jabhat al-Akrad, Jabhat Fateh al-Sham, Mujahideen Army, SRF
+7443	16th Division, Islamic Front, Jabhat Fateh al-Sham
+7461	Jabhat Fateh al-Sham, Rahman Corps
+7468	Islamic Front, Jabhat al-Akrad, Mujahideen Army, SRF
+7477	Nour al-Din Zenki, Sham Legion
+7491	Aknaf Bait al-Maqdis, Jabhat Fateh al-Sham, Jaysh al-Islam, Sons of Yarmouk Movement, Southern Front
+7492	Aknaf Bait al-Maqdis, HTS, Jaysh al-Islam, Sons of Yarmouk Movement, Southern Front
+7498	Ahrar al-Sham, Jabhat Fateh al-Sham, Jaysh al-Islam, Jaysh Usud al-Sharqiya, Martyr Lieutenant Ahmed Abdou Brigades, Rahman Corps
+7514	SNA
+7520	23rd Division, Ahrar al-Sham, Jaysh al Nasr, Jaysh al-Nukhba, Nour al-Din Zenki, Sham Legion, SNA
+7524	23rd Division, Jaysh al Nasr, Jaysh al-Nukhba, Sham Legion, SNA, Syrian Liberation Front
+7525	National Front for Liberation, SNA, Syrian Liberation Front
+7579	Islamic Front, SRF
+7584	Euphrates Islamic Liberation Front, Islamic Front, Jabhat Fateh al-Sham, Liwa Thuwar ar-Raqqa
+7601	Ahrar Ghurayan
+7612	Authenticity and Development Front, Islamic Front, Jabhat Fateh al-Sham
+7615	Jabhat Fateh al-Sham, Liwa al-Qadisiya, Omar al-Mukhtar Battalion
+7631	Northern Storm Brigade
+7582	Dawn of Freedom Brigades
+7646	Dawn of Freedom Brigades, Euphrates Islamic Liberation Front, Islamic Front, Jabhat al-Akrad, Liwa Thuwar ar-Raqqa
+7649	Islamic Front, Jabhat al-Akrad, Liwa Thuwar ar-Raqqa
+7650	Dawn of Freedom Brigades, Jabhat al-Akrad, Northern Storm Brigade
+7656	Islamic Front, Northern Storm Brigade
+7662	Baz al-Islamiya, Dawn of Freedom Brigades, Islamic Front, Jabhat al-Akrad, Jabhat Fateh al-Sham, Liwa al-Sultan Murad, Majd al-Sham
+7663	Dawn of Freedom Brigades, Harkat Hazm, Islamic Front, Jabhat al-Akrad, Jabhat Fateh al-Sham, Mujahideen Army, Nour al-Din Zenki, Sham Legion
+7666	Islamic Front, Jabhat Fateh al-Sham, Liwa al-Jihad fi Sabeel Allah, Liwa Thuwar ar-Raqqa
+6393	Authenticity and Development Front
+5541	Jabhat al-Akrad
+7669	IS, Syrian insurgents
+7672	Ahfad al Rasoul Brigade, Ahrar al-Sham, al-Farouq Brigades, Ghuraba al-Sham, IS, Jabhat Fateh al-Sham, Jazeera-Euphrates Liberation Front, Liwa al-Fateh
+7673	Hamza Asadullah Brigade
+7674	Jabhat Fateh al-Sham, Salahadin Brigade
+7676	Ahrar al-Sham, al-Tawhid Brigade, IS, Islamic Kurdish Front, Jabhat Fateh al-Sham
+7122	Ahrar al-Sharqiya
+7935	al-Moutasem Brigade, Hamza Division
+8050	Army of Maoata al-Islami, Authenticity and Development Front, Islamic Front, Jabhat Fateh al-Sham
+346	Forces of Khudoberdiyev
+1186	PFT
+1216	Forces of Mullo Abdullo
+92	Government of Tanzania
+365	Patani insurgents
+82	Government of Togo
+1000	Moba
+999	Chakosi
+8	Government of Trinidad and Tobago
+762	Jamaat al-Muslimeen
+110	Government of Tunisia
+6359	JAK-T
+334	DHKP-C
+335	MKP
+2034	TAK
+6689	Yurtta Sulh Konseyi
+8179	TKP-ML
+486	UPA
+585	Arrow Boys
+590	Bokora Karimojong
+669	Pian Karimojong
+3844	Jie, Matheniko Karimojong
+3843	Matheniko Karimojong, Turkana
+3839	Toposa, Turkana
+1001	Iteso
+3838	Jie, Matheniko Karimojong, Turkana
+5904	Bakonzo
+6496	Bamba
+5817	Maidan
+5837	Supporters of independence for Eastern Ukraine
+5836	Supporters of Ukrainian unity
+5840	DPR
+5914	United Armed Forces of Novorossiya
+6711	DPR
+6712	LPR
+283	RIRA
+4340	UDA
+360	JIG
+742	Military faction (forces of Hugo Chávez)
+6166	El Dorado long-term inmates
+6167	Former Sabaneta inmates
+6276	Sabaneta - Pavilion I gang
+6275	Sabaneta - Re-education sector gang
+8329	Yare I - The Towers sector gang
+8330	Yare I - The Workshop sector gang
+881	AQAP
+353	Democratic Republic of Yemen
+1091	Ansarallah
+4478	Al-Maraziq
+4477	Al-Saida
+6868	GPC
+7344	STC

@@ -68,49 +68,7 @@
               "scale": {
                 "type": "linear"
               }
-            },
-            "tooltip": [
-              {
-                "field": "date_start",
-                "type": "temporal",
-                "title": "Start Date"
-              },
-              {
-                "field": "country",
-                "type": "nominal",
-                "title": "Country"
-              },
-              {
-                "field": "side_a",
-                "type": "nominal",
-                "title": "Side A"
-              },
-              {
-                "field": "deaths_a",
-                "type": "quantitative",
-                "title": "Side A deaths"
-              },
-              {
-                "field": "side_b",
-                "type": "nominal",
-                "title": "Side B"
-              },
-              {
-                "field": "deaths_b",
-                "type": "quantitative",
-                "title": "Side B deaths"
-              },
-              {
-                "field": "deaths_civilians",
-                "type": "quantitative",
-                "title": "Civilian deaths"
-              },
-              {
-                "field": "deaths_unknown",
-                "type": "quantitative",
-                "title": "Unknown deaths"
-              }
-            ]
+            }
           }
         },
         {
