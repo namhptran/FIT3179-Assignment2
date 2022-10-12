@@ -5,9 +5,6 @@
     {
       "width": "container",
       "height": 1000,
-      "view": {
-        "fill": "lightblue"
-      },
       "projection": {
         "type": "equalEarth"
       },
@@ -25,6 +22,35 @@
             "type": "geoshape",
             "fill": "lightgrey",
             "stroke": "darkgrey"
+          }
+        },
+        {
+          "name": "World Map Ocean",
+          "data": {
+            "url": "./js/ne_50m_ocean.json",
+            "format": {
+              "type": "topojson",
+              "feature": "ne_50m_ocean"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "skyblue"
+          }
+        },
+        {
+          "name": "World Map Graticule",
+          "data": {
+            "url": "./js/ne_50m.json",
+            "format": {
+              "type": "topojson",
+              "feature": "ne_50m_graticules_30"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": null,
+            "stroke": "darkgray"
           }
         },
         {
@@ -48,14 +74,24 @@
           ],
           "transform": [
             {
+              "filter": {
+                "param": "event_filter"
+              }
+            },
+            {
               "filter": "datum.best >= 100"
             },
             {
-              "filter": "datum.best <= 10000"
+              "filter": "datum.best < 5000"
             },
             {
-              "filter": {
-                "param": "deaths_brush"
+              "lookup": "country_id",
+              "from": {
+                "data": {
+                  "url": "./data/country_id.csv"
+                },
+                "key": "country_id",
+                "fields": ["country_name"]
               }
             }
           ],
@@ -83,15 +119,109 @@
             },
             "color": {
               "field": "region",
-              "type": "nominal"
+              "type": "nominal",
+              "legend": {
+                "type": "symbol",
+                "symbolOpacity": 1
+              },
+              "scale": {
+                "scheme": "dark2"
+              }
             },
             "opacity": {
               "condition": {
                 "param": "region_param",
-                "value": 1
+                "value": 0.3
               },
-              "value": 0.1
+              "value": 0.01
+            },
+            "tooltip": [
+              {
+                "type": "nominal",
+                "field": "country_name",
+                "title": "Country"
+              },
+              {
+                "type": "quantitative",
+                "field": "best",
+                "title": "Total deaths"
+              },
+              {
+                "type": "temporal",
+                "field": "date_start",
+                "title": "Start date"
+              },
+              {
+                "type": "temporal",
+                "field": "date_end",
+                "title": "End date"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Symbol Map Over 5000",
+          "data": {
+            "url": "./data/GEDEvent_v22_1.csv",
+            "format": {
+              "type": "csv"
             }
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "event_filter"
+              }
+            },
+            {
+              "filter": "datum.best >= 5000"
+            },
+            {
+              "lookup": "country_id",
+              "from": {
+                "data": {
+                  "url": "./data/country_id.csv"
+                },
+                "key": "country_id",
+                "fields": ["country_name"]
+              }
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "fill": "black"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "longitude",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "latitude",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "type": "nominal",
+                "field": "country_name",
+                "title": "Country"
+              },
+              {
+                "type": "quantitative",
+                "field": "best",
+                "title": "Total deaths"
+              },
+              {
+                "type": "temporal",
+                "field": "date_start",
+                "title": "Start date"
+              },
+              {
+                "type": "temporal",
+                "field": "date_end",
+                "title": "End date"
+              }
+            ]
           }
         }
       ]
@@ -112,12 +242,10 @@
         {
           "params": [
             {
-              "name": "deaths_brush",
+              "name": "event_filter",
               "select": {
                 "type": "interval",
-                "encodings": [
-                  "y"
-                ]
+                "clear": "mouseup"
               }
             }
           ],
@@ -218,6 +346,218 @@
           }
         }
       ]
+    },
+    {
+      "data": {
+        "url": "data/GEDEvent_v22_1.csv"
+      },
+      "width": "container",
+      "height": 200,
+      "transform": [
+        {
+          "filter": "datum.best > 0"
+        },
+        {
+          "filter": {
+            "param": "event_filter"
+          }
+        },
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "deaths_a",
+              "as": "deaths_a_total"
+            },
+            {
+              "op": "sum",
+              "field": "deaths_b",
+              "as": "deaths_b_total"
+            },
+            {
+              "op": "sum",
+              "field": "deaths_civilians",
+              "as": "death_civilians_total"
+            },
+            {
+              "op": "sum",
+              "field": "best",
+              "as": "deaths_total"
+            }
+          ],
+          "groupby": ["country_id"]
+        },
+        {
+          "calculate": "datum.deaths_a_total + datum.deaths_b_total",
+          "as": "death_non_civilians_total"
+        },
+        {
+          "window": [{"op": "rank", "as": "ranking"}],
+          "sort": [
+            {
+              "field": "deaths_total",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.ranking <= 10"
+        },
+        {
+          "lookup": "country_id",
+          "from": {
+            "data": {
+              "url": "./data/country_id.csv",
+              "format": {
+                "type": "tsv"
+              }
+            },
+            "key": "country_id",
+            "fields": ["country_name"]
+          }
+        },
+        {
+          "fold": [
+            "death_non_civilians_total",
+            "death_civilians_total"
+          ],
+          "as": ["group", "deaths"]
+        }
+      ],
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "x": {
+          "field": "country_name",
+          "type": "nominal",
+          "sort": "y"
+        },
+        "y": {
+          "field": "deaths",
+          "scale": {
+            "type": "linear"
+          }
+        },
+        "color": {
+          "field": "group",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "death_non_civilians_total",
+              "death_civilians_total"
+            ],
+            "range": ["#1f77b4", "#ff7f0e"]
+          }
+        }
+      }
+    },
+
+    {
+      "data": {
+        "url": "data/GEDEvent_v22_1.csv"
+      },
+      "width": "container",
+      "height": 200,
+      "transform": [
+        {
+          "filter": "datum.best > 0"
+        },
+        {
+          "filter": {
+            "param": "event_filter"
+          }
+        },
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "deaths_a",
+              "as": "deaths_a_total"
+            },
+            {
+              "op": "sum",
+              "field": "deaths_b",
+              "as": "deaths_b_total"
+            },
+            {
+              "op": "sum",
+              "field": "deaths_civilians",
+              "as": "death_civilians_total"
+            },
+            {
+              "op": "sum",
+              "field": "best",
+              "as": "deaths_total"
+            }
+          ],
+          "groupby": ["conflict_new_id"]
+        },
+        {
+          "calculate": "datum.deaths_a_total + datum.deaths_b_total",
+          "as": "death_non_civilians_total"
+        },
+        {
+          "window": [{"op": "rank", "as": "ranking"}],
+          "sort": [
+            {
+              "field": "deaths_total",
+              "order": "descending"
+            }
+          ]
+        },
+        {
+          "filter": "datum.ranking <= 10"
+        },
+        {
+          "lookup": "conflict_new_id",
+          "from": {
+            "data": {
+              "url": "./data/conflict_id.csv",
+              "format": {
+                "type": "tsv"
+              }
+            },
+            "key": "conflict_id",
+            "fields": ["conflict_name"]
+          }
+        },
+        {
+          "fold": [
+            "death_non_civilians_total",
+            "death_civilians_total"
+          ],
+          "as": ["group", "deaths"]
+        }
+      ],
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "x": {
+          "field": "conflict_name",
+          "type": "nominal",
+          "sort": "y"
+        },
+        "y": {
+          "field": "deaths",
+          "scale": {
+            "type": "linear"
+          }
+        },
+        "color": {
+          "field": "group",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "death_non_civilians_total",
+              "death_civilians_total"
+            ],
+            "range": ["#1f77b4", "#ff7f0e", "#2ca02c"]
+          }
+        }
+      }
     }
-  ]
+  ],
+  "resolve": {"scale": {"color": "independent"}}
 }
