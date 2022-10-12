@@ -35,20 +35,32 @@
               "type": "csv"
             }
           },
+          "params": [{
+            "name": "region_param",
+            "select": {
+              "type": "point",
+              "fields": [
+                "region"
+              ]
+            },
+            "bind": "legend"
+          }
+          ],
           "transform": [
             {
-              "filter": "datum.best > 0"
+              "filter": "datum.best >= 100"
+            },
+            {
+              "filter": "datum.best <= 10000"
             },
             {
               "filter": {
-                "param": "time_brush"
+                "param": "deaths_brush"
               }
             }
           ],
           "mark": {
-            "type": "circle",
-            "fill": "darkred",
-            "opacity": 0.3
+            "type": "circle"
           },
           "encoding": {
             "longitude": {
@@ -68,101 +80,144 @@
               "scale": {
                 "type": "linear"
               }
-            }
-          }
-        },
-        {
-          "data": {
-            "url": "./data/GEDEvent_v22_1.csv",
-            "format": {
-              "type": "csv"
-            }
-          },
-          "transform": [
-            {
-              "filter": {
-                "param": "time_brush"
-              }
             },
-            {
-              "sort": [
-                {
-                  "field": "best",
-                  "order": "descending"
-                }
-              ],
-              "window": [
-                {
-                  "op": "rank",
-                  "as": "ranking"
-                }
-              ]
+            "color": {
+              "field": "region",
+              "type": "nominal"
             },
-            {
-              "filter": "datum.ranking == 1"
-            },
-            {
-              "calculate": "'The most deadly conflict of; the selected period: ' + datum['best']",
-              "as": "text_annotation_raw"
-            },
-            {
-              "calculate": "split(datum.text_annotation_raw,';')",
-              "as": "text_annotation"
-            }
-          ],
-          "mark": {
-            "type": "text",
-            "align": "right",
-            "dx": -8,
-            "dy": -8,
-            "baseline": "middle",
-            "fontStyle": "italic"
-          },
-          "encoding": {
-            "text": {
-              "field": "text_annotation"
+            "opacity": {
+              "condition": {
+                "param": "region_param",
+                "value": 1
+              },
+              "value": 0.1
             }
           }
         }
       ]
     },
     {
+      "data": {
+        "url": "data/GEDEvent_v22_1.csv"
+      },
       "width": "container",
       "height": 200,
-      "mark": "line",
-      "title": "Organised Violent Events",
-      "data": {
-        "url": "./data/GEDEvent_v22_1.csv",
-        "format": {
-          "type": "csv"
-        }
-      },
-      "params": [
+      "title": "Deaths by Organised and State-based Violence (1989-2021)",
+      "transform": [
         {
-          "name": "time_brush",
-          "select": {
-            "type": "interval",
-            "encodings": [
-              "x"
-            ]
-          }
+          "filter": "datum.best > 100"
         }
       ],
-      "encoding": {
-        "x": {
-          "field": "date_start",
-          "type": "temporal",
-          "timeUnit": "yearmonthdate",
-          "title": "Start date of event"
+      "layer": [
+        {
+          "params": [
+            {
+              "name": "deaths_brush",
+              "select": {
+                "type": "interval",
+                "encodings": [
+                  "y"
+                ]
+              }
+            }
+          ],
+          "mark": {
+            "type": "point",
+            "filled": true
+          },
+          "encoding": {
+            "color": {
+              "field": "region",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "date_start",
+              "type": "temporal",
+              "title": "Start/End Date"
+            },
+            "y": {
+              "field": "best",
+              "type": "quantitative",
+              "scale": {
+                "type": "log"
+              },
+              "title": "Estimated deaths"
+            },
+            "opacity": {
+              "condition": {
+                "param": "region_param",
+                "value": 1
+              },
+              "value": 0.1
+            }
+          }
         },
-        "y": {
-          "aggregate": "count",
-          "title": "Number of events",
-          "scale": {
-            "type": "linear"
+        {
+          "mark": {
+            "type": "point",
+            "filled": true
+          },
+          "encoding": {
+            "color": {
+              "field": "region",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "date_end",
+              "type": "temporal"
+            },
+            "y": {
+              "field": "best",
+              "type": "quantitative",
+              "scale": {
+                "type": "log"
+              }
+            },
+            "opacity": {
+              "condition": {
+                "param": "region_param",
+                "value": 1
+              },
+              "value": 0.1
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "rule"
+          },
+          "encoding": {
+            "color": {
+              "field": "region",
+              "type": "nominal"
+            },
+            "x": {
+              "field": "date_start",
+              "type": "temporal"
+            },
+            "x2": {
+              "field": "date_end"
+            },
+            "y": {
+              "field": "best",
+              "type": "quantitative",
+              "scale": {
+                "type": "log"
+              }
+            },
+            "y2": {
+              "field": "best"
+            },
+            "opacity": {
+              "condition": {
+                "param": "region_param",
+                "value": 1
+              },
+              "value": 0.1
+            }
           }
         }
-      }
+      ]
     }
   ]
 }
