@@ -10,7 +10,7 @@
   "background": "#F3FAF9",
   "vconcat": [
     {
-      "width": 1500,
+      "width": "container",
       "height": 750,
       "projection": {
         "type": "equalEarth"
@@ -304,7 +304,7 @@
       "data": {
         "url": "data/GEDEvent_v22_1.csv"
       },
-      "width": 1500,
+      "width": "container",
       "height": 200,
       "title": "Deaths by Organised and State-based Violence (1989-2021)",
       "transform": [
@@ -432,8 +432,8 @@
           "data": {
             "url": "data/GEDEvent_v22_1.csv"
           },
-          "width": 710,
           "height": 200,
+          "width": 600,
           "transform": [
             {
               "filter": "datum.best > 0"
@@ -548,7 +548,7 @@
             "url": "data/GEDEvent_v22_1.csv"
           },
           "height": 200,
-          "width": 710,
+          "width": 600,
           "transform": [
             {
               "filter": "datum.best > 0"

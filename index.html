@@ -15,20 +15,32 @@
     <title>Organised Violent Events</title>
 </head>
 <body>
-
-
 <div class="pure-u-1">
     <div id="text_div">
         <h1>Organised Violence</h1>
     </div>
 </div>
 
-<div id="map"></div>
+<div class="pure-g">
 
-<script type="text/javascript">
-    var spec2 = "js/map.vg.json";
-    vegaEmbed('#map', spec2).catch(console.error);
-</script>
+    <div class="pure-u-1-6">
+        <h1>Title</h1>
+    </div>
+
+    <div class="pure-u-2-3", id="map">
+        <h1>Map</h1>
+    </div>
+
+    <script type="text/javascript">
+        var spec2 = "js/map.vg.json";
+        vegaEmbed('#map', spec2).catch(console.error);
+    </script>
+
+    <div class="pure-u-1-6">
+        <h1>Title</h1>
+    </div>
+</div>
+
 
 <div style="padding-top: 100px;padding-left: 100px">
     Data source: Davies, Shawn, Therese Pettersson & Magnus Öberg (2022). Organized violence 1989-2021 and drone warfare. Journal of Peace Research 59(4).
