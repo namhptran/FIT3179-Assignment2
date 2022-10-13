@@ -1,5 +1,9 @@
+html, body {
+	background-color: #F3FAF9;
+}
+
 #map {
-	width: 80%;
+	width: 1600px;
 }
 
 #text_div {

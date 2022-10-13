@@ -1,6 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Deaths by Organised and State-based Violence (1989-2021)",
+  "title": {
+    "text": "Deaths by Organised and State-based Violence (1989-2021)",
+    "subtitle": "Source: UCDP Georeferenced Event Dataset (GED) Global version 22.1",
+    "anchor": "middle",
+    "align": "center"
+  },
+  "center": true,
+  "background": "#F3FAF9",
   "vconcat": [
     {
       "width": 1500,
@@ -225,8 +232,71 @@
                 "field": "date_end",
                 "title": "End date"
               }
-            ]
+            ],
+            "opacity": {
+                "condition": {
+                    "param": "region_param",
+                    "value": 1
+                },
+                "value": 0.1
+            }
           }
+        },
+        {
+          "data": {
+            "url": "./data/GEDEvent_v22_1.csv"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "event_filter"
+              }
+            },
+            {
+              "calculate": "toNumber(datum.best)",
+              "as": "best_num"
+            },
+            {
+              "window": [{"op": "rank", "as": "ranking"}],
+              "sort": [{
+                "field": "best_num", "order": "descending"}
+              ]
+            },
+            {"filter": "datum.ranking == 1"},
+            {
+              "calculate": "'The deadliest event in; the selected range: ' + datum['best']",
+              "as": "text_annotation_raw"
+            },
+            {
+              "calculate": "split(datum.text_annotation_raw, ';')",
+              "as": "text_annotation"
+            }
+          ],
+          "encoding": {
+            "longitude": {"field": "longitude", "type": "quantitative"},
+            "latitude": {"field": "latitude", "type": "quantitative"}
+            },
+          "layer": [
+            {
+              "mark": {
+                "type": "point",
+                "size": 400,
+                "shape": "M0,.5L.6,.8L.5,.1L1,-.3L.3,-.4L0,-1L-.3,-.4L-1,-.3L-.5,.1L-.6,.8L0,.5Z",
+                "stroke": "red"
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -8,
+                "dy": -8,
+                "baseline": "middle",
+                "fontStyle": "italic"
+              },
+              "encoding": {"text": {"field": "text_annotation"}}
+            }
+          ]
         }
       ]
     },
@@ -374,6 +444,11 @@
               }
             },
             {
+              "filter": {
+                "param": "region_param"
+              }
+            },
+            {
               "aggregate": [
                 {
                   "op": "sum",
@@ -452,7 +527,8 @@
               "field": "deaths",
               "scale": {
                 "type": "linear"
-              }
+              },
+              "title": "Total deaths"
             },
             "color": {
               "field": "group",
@@ -480,6 +556,11 @@
             {
               "filter": {
                 "param": "event_filter"
+              }
+            },
+            {
+              "filter": {
+                "param": "region_param"
               }
             },
             {
