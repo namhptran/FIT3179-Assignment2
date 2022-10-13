@@ -3,8 +3,8 @@
   "title": "Deaths by Organised and State-based Violence (1989-2021)",
   "vconcat": [
     {
-      "width": "container",
-      "height": 1000,
+      "width": 1500,
+      "height": 750,
       "projection": {
         "type": "equalEarth"
       },
@@ -111,7 +111,8 @@
               "field": "best",
               "type": "quantitative",
               "legend": {
-                "title": "Deaths (Individual Event)"
+                "title": "Deaths",
+                "orient": "top-left"
               },
               "scale": {
                 "type": "linear"
@@ -120,11 +121,14 @@
             "color": {
               "field": "region",
               "type": "nominal",
+              "title": "Region",
               "legend": {
                 "type": "symbol",
-                "symbolOpacity": 1
+                "symbolOpacity": 1,
+                "orient": "bottom-right"
               },
               "scale": {
+                "domain": ["Africa", "Americas", "Asia", "Europe", "Middle East"],
                 "scheme": "dark2"
               }
             },
@@ -230,7 +234,7 @@
       "data": {
         "url": "data/GEDEvent_v22_1.csv"
       },
-      "width": "container",
+      "width": 1500,
       "height": 200,
       "title": "Deaths by Organised and State-based Violence (1989-2021)",
       "transform": [
@@ -317,7 +321,12 @@
           "encoding": {
             "color": {
               "field": "region",
-              "type": "nominal"
+              "type": "nominal",
+              "scale": {
+                "domain": ["Africa", "Americas", "Asia", "Europe", "Middle East"],
+                "scheme": "dark2"
+              },
+              "legend": null
             },
             "x": {
               "field": "date_start",
@@ -348,216 +357,239 @@
       ]
     },
     {
-      "data": {
-        "url": "data/GEDEvent_v22_1.csv"
-      },
-      "width": "container",
-      "height": 200,
-      "transform": [
+      "hconcat": [
         {
-          "filter": "datum.best > 0"
-        },
-        {
-          "filter": {
-            "param": "event_filter"
-          }
-        },
-        {
-          "aggregate": [
+          "data": {
+            "url": "data/GEDEvent_v22_1.csv"
+          },
+          "width": 710,
+          "height": 200,
+          "transform": [
             {
-              "op": "sum",
-              "field": "deaths_a",
-              "as": "deaths_a_total"
+              "filter": "datum.best > 0"
             },
             {
-              "op": "sum",
-              "field": "deaths_b",
-              "as": "deaths_b_total"
-            },
-            {
-              "op": "sum",
-              "field": "deaths_civilians",
-              "as": "death_civilians_total"
-            },
-            {
-              "op": "sum",
-              "field": "best",
-              "as": "deaths_total"
-            }
-          ],
-          "groupby": ["country_id"]
-        },
-        {
-          "calculate": "datum.deaths_a_total + datum.deaths_b_total",
-          "as": "death_non_civilians_total"
-        },
-        {
-          "window": [{"op": "rank", "as": "ranking"}],
-          "sort": [
-            {
-              "field": "deaths_total",
-              "order": "descending"
-            }
-          ]
-        },
-        {
-          "filter": "datum.ranking <= 10"
-        },
-        {
-          "lookup": "country_id",
-          "from": {
-            "data": {
-              "url": "./data/country_id.csv",
-              "format": {
-                "type": "tsv"
+              "filter": {
+                "param": "event_filter"
               }
             },
-            "key": "country_id",
-            "fields": ["country_name"]
-          }
-        },
-        {
-          "fold": [
-            "death_non_civilians_total",
-            "death_civilians_total"
-          ],
-          "as": ["group", "deaths"]
-        }
-      ],
-      "mark": {
-        "type": "bar"
-      },
-      "encoding": {
-        "x": {
-          "field": "country_name",
-          "type": "nominal",
-          "sort": "y"
-        },
-        "y": {
-          "field": "deaths",
-          "scale": {
-            "type": "linear"
-          }
-        },
-        "color": {
-          "field": "group",
-          "type": "nominal",
-          "scale": {
-            "domain": [
-              "death_non_civilians_total",
-              "death_civilians_total"
-            ],
-            "range": ["#1f77b4", "#ff7f0e"]
-          }
-        }
-      }
-    },
-
-    {
-      "data": {
-        "url": "data/GEDEvent_v22_1.csv"
-      },
-      "width": "container",
-      "height": 200,
-      "transform": [
-        {
-          "filter": "datum.best > 0"
-        },
-        {
-          "filter": {
-            "param": "event_filter"
-          }
-        },
-        {
-          "aggregate": [
             {
-              "op": "sum",
-              "field": "deaths_a",
-              "as": "deaths_a_total"
+              "aggregate": [
+                {
+                  "op": "sum",
+                  "field": "deaths_a",
+                  "as": "deaths_a_total"
+                },
+                {
+                  "op": "sum",
+                  "field": "deaths_b",
+                  "as": "deaths_b_total"
+                },
+                {
+                  "op": "sum",
+                  "field": "deaths_civilians",
+                  "as": "Civilians"
+                },
+                {
+                  "op": "sum",
+                  "field": "best",
+                  "as": "deaths_total"
+                }
+              ],
+              "groupby": ["country_id"]
             },
             {
-              "op": "sum",
-              "field": "deaths_b",
-              "as": "deaths_b_total"
+              "calculate": "datum.deaths_a_total + datum.deaths_b_total",
+              "as": "Non-civilians"
             },
             {
-              "op": "sum",
-              "field": "deaths_civilians",
-              "as": "death_civilians_total"
+              "window": [{"op": "rank", "as": "ranking"}],
+              "sort": [
+                {
+                  "field": "deaths_total",
+                  "order": "descending"
+                }
+              ]
             },
             {
-              "op": "sum",
-              "field": "best",
-              "as": "deaths_total"
-            }
-          ],
-          "groupby": ["conflict_new_id"]
-        },
-        {
-          "calculate": "datum.deaths_a_total + datum.deaths_b_total",
-          "as": "death_non_civilians_total"
-        },
-        {
-          "window": [{"op": "rank", "as": "ranking"}],
-          "sort": [
+              "filter": "datum.ranking <= 10"
+            },
             {
-              "field": "deaths_total",
-              "order": "descending"
-            }
-          ]
-        },
-        {
-          "filter": "datum.ranking <= 10"
-        },
-        {
-          "lookup": "conflict_new_id",
-          "from": {
-            "data": {
-              "url": "./data/conflict_id.csv",
-              "format": {
-                "type": "tsv"
+              "lookup": "country_id",
+              "from": {
+                "data": {
+                  "url": "./data/country_id.csv",
+                  "format": {
+                    "type": "tsv"
+                  }
+                },
+                "key": "country_id",
+                "fields": ["country_name"]
               }
             },
-            "key": "conflict_id",
-            "fields": ["conflict_name"]
+            {
+              "fold": [
+                "Non-civilians",
+                "Civilians"
+              ],
+              "as": ["group", "deaths"]
+            }
+          ],
+          "mark": {
+            "type": "bar"
+          },
+          "encoding": {
+            "x": {
+              "field": "country_name",
+              "type": "nominal",
+              "sort": "y",
+              "title": "Country",
+              "axis": {
+                "labelAngle": -20
+              }
+            },
+            "y": {
+              "field": "deaths",
+              "scale": {
+                "type": "linear"
+              }
+            },
+            "color": {
+              "field": "group",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "Civilians",
+                  "Non-civilians"
+                ],
+                "range": ["#1f77b4", "#ff7f0e"]
+              }
+            }
           }
         },
         {
-          "fold": [
-            "death_non_civilians_total",
-            "death_civilians_total"
+          "data": {
+            "url": "data/GEDEvent_v22_1.csv"
+          },
+          "height": 200,
+          "width": 710,
+          "transform": [
+            {
+              "filter": "datum.best > 0"
+            },
+            {
+              "filter": {
+                "param": "event_filter"
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "sum",
+                  "field": "deaths_a",
+                  "as": "deaths_a_total"
+                },
+                {
+                  "op": "sum",
+                  "field": "deaths_b",
+                  "as": "deaths_b_total"
+                },
+                {
+                  "op": "sum",
+                  "field": "deaths_civilians",
+                  "as": "Civilians"
+                },
+                {
+                  "op": "sum",
+                  "field": "best",
+                  "as": "deaths_total"
+                }
+              ],
+              "groupby": ["conflict_new_id"]
+            },
+            {
+              "calculate": "datum.deaths_a_total + datum.deaths_b_total",
+              "as": "Non-civilians"
+            },
+            {
+              "window": [{"op": "rank", "as": "ranking"}],
+              "sort": [
+                {
+                  "field": "deaths_total",
+                  "order": "descending"
+                }
+              ]
+            },
+            {
+              "filter": "datum.ranking <= 10"
+            },
+            {
+              "lookup": "conflict_new_id",
+              "from": {
+                "data": {
+                  "url": "./data/conflict_id.csv",
+                  "format": {
+                    "type": "tsv"
+                  }
+                },
+                "key": "conflict_id",
+                "fields": ["conflict_name"]
+              }
+            },
+            {
+              "fold": [
+                "Non-civilians",
+                "Civilians"
+              ],
+              "as": ["group", "deaths"]
+            }
           ],
-          "as": ["group", "deaths"]
-        }
-      ],
-      "mark": {
-        "type": "bar"
-      },
-      "encoding": {
-        "x": {
-          "field": "conflict_name",
-          "type": "nominal",
-          "sort": "y"
-        },
-        "y": {
-          "field": "deaths",
-          "scale": {
-            "type": "linear"
+          "mark": {
+            "type": "bar"
+          },
+          "encoding": {
+            "x": {
+              "field": "conflict_name",
+              "type": "nominal",
+              "sort": "y",
+              "title": "Conflict Name",
+              "axis": {
+                "labelAngle": -20
+              }
+            },
+            "y": {
+              "field": "deaths",
+              "scale": {
+                "type": "linear"
+              },
+              "title": "Total Deaths"
+            },
+            "color": {
+              "field": "group",
+              "title": "Type of death",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "Non-civilians",
+                  "Civilians"
+                ],
+                "range": ["#1f77b4", "#ff7f0e"]
+              },
+              "legend": {
+                "orient": "top-left"
+              }
+            }
           }
-        },
-        "color": {
-          "field": "group",
-          "type": "nominal",
-          "scale": {
-            "domain": [
-              "death_non_civilians_total",
-              "death_civilians_total"
-            ],
-            "range": ["#1f77b4", "#ff7f0e", "#2ca02c"]
-          }
         }
-      }
+      ]
     }
   ],
-  "resolve": {"scale": {"color": "independent"}}
+  "resolve": {"scale": {"color": "independent"}},
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
 }
