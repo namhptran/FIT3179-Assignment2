@@ -304,7 +304,7 @@
       },
       "width": 1800,
       "height": 400,
-      "title": "Violent Events with more than 100 deaths (Interact to filter)",
+      "title": "Violent Events with more than 10 deaths (Interact to filter)",
       "transform": [
         {
           "filter": "datum.best >= 10"
