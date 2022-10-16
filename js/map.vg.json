@@ -307,7 +307,7 @@
       "title": "Violent Events with more than 100 deaths (Interact to filter)",
       "transform": [
         {
-          "filter": "datum.best > 100"
+          "filter": "datum.best >= 10"
         },
         {
           "lookup": "country_id",
@@ -355,6 +355,7 @@
               },
               "axis": {
                 "values": [
+                  10,
                   100,
                   1000,
                   10000,
@@ -368,7 +369,7 @@
                 "param": "region_param",
                 "value": 1
               },
-              "value": 0.1
+              "value": 0
             },
             "tooltip": [
               {
@@ -420,7 +421,7 @@
                 "param": "region_param",
                 "value": 1
               },
-              "value": 0.1
+              "value": 0
             },
             "tooltip": [
               {
@@ -488,7 +489,7 @@
                 "param": "region_param",
                 "value": 1
               },
-              "value": 0.1
+              "value": 0
             },
             "tooltip": [
               {
