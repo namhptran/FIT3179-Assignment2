@@ -1,0 +1,101 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#F3FAF9",
+  "width": "container",
+  "height": 300,
+  "projection": {
+    "type": "equalEarth"
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "./js/ne_50m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "ne_50m_admin_0_countries"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.NAME == 'Rwanda'"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgrey",
+        "stroke": "darkgrey"
+      }
+    },
+    {
+      "data": {
+        "url": "./data/GEDEvent_v22_1.csv"
+      },
+      "transform": [
+        {
+          "filter": "datum.conflict_new_id == 472"
+        },
+        {
+          "filter": "datum.country_id == 517"
+        }
+      ],
+      "mark": {
+        "type": "circle"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "latitude",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "best",
+          "type": "quantitative",
+          "legend": {
+            "title": "Deaths",
+            "orient": "top-left"
+          },
+          "scale": {
+            "type": "linear"
+          }
+        },
+        "color": {
+          "field": "region",
+          "type": "nominal",
+          "title": "Region",
+          "legend": null,
+          "scale": {
+            "domain": ["Africa", "Americas", "Asia", "Europe", "Middle East"],
+            "scheme": "dark2"
+          }
+        },
+        "tooltip": [
+          {
+            "type": "quantitative",
+            "field": "best",
+            "title": "Total deaths"
+          },
+          {
+            "type": "temporal",
+            "field": "date_start",
+            "title": "Start date"
+          },
+          {
+            "type": "temporal",
+            "field": "date_end",
+            "title": "End date"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    }
+  }
+}
