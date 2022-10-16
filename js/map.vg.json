@@ -1,14 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {
-    "text": "Map of all violent events",
-    "anchor": "middle",
-    "align": "center"
-  },
   "center": true,
   "background": "#F3FAF9",
   "vconcat": [
     {
+      "title": "Map of all violent events",
       "width": 1800,
       "height": 750,
       "projection": {
@@ -155,7 +151,8 @@
               "legend": {
                 "type": "symbol",
                 "symbolOpacity": 1,
-                "orient": "bottom-left"
+                "orient": "bottom-left",
+                "symbolSize": 400
               },
               "scale": {
                 "domain": [
@@ -812,6 +809,15 @@
     "style": {
       "cell": {
         "stroke": "transparent"
+      },
+      "group-title": {
+        "fontSize": 20
+      },
+      "guide-label": {
+        "fontSize": 13
+      },
+      "guide-title": {
+        "fontSize": 15
       }
     }
   }
