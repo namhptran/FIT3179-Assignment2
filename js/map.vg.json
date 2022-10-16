@@ -1,8 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Deaths by Organised and State-based Violence (1989-2021)",
-    "subtitle": "Source: UCDP Georeferenced Event Dataset (GED) Global version 22.1",
+    "text": "Map of all violent events",
     "anchor": "middle",
     "align": "center"
   },
@@ -10,7 +9,7 @@
   "background": "#F3FAF9",
   "vconcat": [
     {
-      "width": 1500,
+      "width": 1800,
       "height": 750,
       "projection": {
         "type": "equalEarth"
@@ -156,7 +155,7 @@
               "legend": {
                 "type": "symbol",
                 "symbolOpacity": 1,
-                "orient": "bottom-right"
+                "orient": "bottom-left"
               },
               "scale": {
                 "domain": [
@@ -306,9 +305,9 @@
       "data": {
         "url": "data/GEDEvent_v22_1.csv"
       },
-      "width": 1500,
-      "height": 200,
-      "title": "Deaths by Organised and State-based Violence (1989-2021)",
+      "width": 1800,
+      "height": 400,
+      "title": "Violent Events with more than 100 deaths (Interact to filter)",
       "transform": [
         {
           "filter": "datum.best > 100"
@@ -526,8 +525,9 @@
           "data": {
             "url": "data/GEDEvent_v22_1.csv"
           },
-          "height": 200,
-          "width": 710,
+          "height": 250,
+          "width": 850,
+          "title": "Top 10 countries with most deaths in violent events",
           "transform": [
             {
               "filter": "datum.best > 0"
@@ -660,8 +660,9 @@
           "data": {
             "url": "data/GEDEvent_v22_1.csv"
           },
-          "height": 200,
-          "width": 710,
+          "height": 250,
+          "width": 850,
+          "title": "Top 10 conflicts as cause of death",
           "transform": [
             {
               "filter": "datum.best > 0"
